@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="bad_tejas_apani.ClipBoardField" t-inherit="web.CharField" t-inherit-mode="primary">
+        <xpath expr="//t[@t-else='']" position="after">
+            <button class="o_field_input_buttons btn btn-link" t-on-click="(ev)=>this.copyIntoClipboard(ev)">
+                <i class="o_button_icon fa fa-clipboard"/>
+            </button>
+        </xpath>
+    </t>
+</templates>
